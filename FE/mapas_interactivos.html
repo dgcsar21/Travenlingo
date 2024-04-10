@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de Estados Unidos</title>
+    <!-- Incluir archivos CSS de Leaflet -->
+    <link rel="stylesheet" href= "C:\Users\usuario\Downloads\leaflet\leaflet.css">
+
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa Interactivo de Estados Unidos</h1>
+    <div id="map"></div>
+
+    <!-- Incluir archivos JavaScript de Leaflet y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"s></script>
+    <script src="C:\Users\usuario\Downloads\leaflet\leaflet.js"></script>
+
+    <script>
+        // Inicializar el mapa
+        var map = L.map('map').setView([39.8283, -98.5795], 4);
+
+        // Agregar capa de mapa base de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Agregar marcador para la ubicación central
+        var marker = L.marker([39.8283, -98.5795]).addTo(map);
+        marker.bindPopup("<b>Centro de Estados Unidos</b>").openPopup();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="estiloprod.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .product {
+            width: 300px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .product-name {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .product-price {
+            text-align: center;
+            color: #888;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .modules-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .module {
+            flex: 1;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .module:hover {
+            background-color: #555;
+        }
+
+        .about-us {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            padding: 0 20px;
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-text h2 {
+            margin-top: 0;
+        }
+
+        .about-text p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+    <div class="modules-container">
+        <a href="lugares_turisticos.html" class="module">
+            <h2>Lugares Turísticos</h2>
+            <p>Descubre los principales lugares turísticos de Estados Unidos y Francia.</p>
+        </a>
+        <a href="mejores_hoteles.html" class="module">
+            <h2>Mejores Hoteles</h2>
+            <p>Encuentra los mejores hoteles para tu estadía en tus viajes.</p>
+        </a>
+        <a href="mejores_traductores.html" class="module">
+            <h2>Mejores Traductores</h2>
+            <p>Aprende idiomas con los mejores traductores del idioma.</p>
+        </a>
+        <a href="mapas_interactivos.html" class="module">
+            <h2>Mapas Interactivos</h2>
+            <p>Explora mapas interactivos para planificar tus recorridos.</p>
+        </a>
+        <a href="compartir_experiencia.html" class="module">
+            <h2>Comparte tu Experiencia</h2>
+            <p>Comparte tus experiencias de viaje en Estados Unidos y Francia.</p>
+        </a>
+    </div>
+
+    <div class="about-us">
+        <div class="about-text">
+            <h2>¡Bienvenido a Estados Unidos!</h2>
+            <p>Estados Unidos es un país rico en historia, cultura y diversidad. Desde los rascacielos de Nueva York hasta las playas de California, este país ofrece una amplia gama de experiencias para todos los viajeros. Con una mezcla única de paisajes impresionantes, ciudades vibrantes y una gran variedad de atracciones turísticas, Estados Unidos es una excelente opción para tus próximas vacaciones.</p>
+        </div>
+        <div class="about-image">
+            <img src="C:\xampp\htdocs\FE\img3.jpg" alt="Estados Unidos">
+        </div>
+    </div>
+</body>
+</html>
